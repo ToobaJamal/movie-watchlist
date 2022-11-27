@@ -47,7 +47,7 @@ header {
     cursor: pointer;
 }
 .search {
-    width: 462px;
+    max-width: 462px;
     height: 38px;
     margin-inline: auto;
     background: var(--white);
@@ -231,7 +231,8 @@ main {
         line-height: 20px; 
     }
     .search {
-        width: 400px;
+        /* width: 400px; */
+        margin: 0.4em;
     }
     .movie-card-holder {
         width: 400px;
@@ -254,7 +255,7 @@ main {
     }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 410px){
     .header-text > h1 {
         font-size: 22px;
         line-height: 20px;
@@ -264,9 +265,10 @@ main {
         font-size: 12px;
         line-height: 20px; 
     }
-    .search {
+    /* .search {
         width: 350px;
-    }
+        margin: 0.4em;
+    } */
     .movie-card-holder {
         width: 350px;
         margin-inline: auto;
@@ -291,5 +293,10 @@ main {
     }
     .movie-poster {
         width: 80px;
+    }
+}
+@media (max-width: 370px) {
+    main {
+        margin-inline: 0.4em;
     }
 }
